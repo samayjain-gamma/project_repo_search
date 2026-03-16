@@ -6,7 +6,7 @@ seperate
 
 
 
-mcp-github-search/
+mcp-search-system/
 │
 ├── app/
 │   │
@@ -14,16 +14,20 @@ mcp-github-search/
 │   │
 │   ├── graph/
 │   │   ├── workflow.py
-│   │   ├── state.py
-│   │   └── nodes.py
+│   │   ├── nodes.py
+│   │   └── state.py
 │   │
 │   └── mcp_client/
 │       └── client.py
 │
-├── mcp_servers/
-│   └── github_server/
-│       ├── server.py
-│       └── github_tool.py
+├── mcp_server/
+│   │
+│   ├── server.py
+│   │
+│   ├── tools/
+│   │   ├── github_tool.py
+│   │   ├── wikipedia_tool.py
+│   │   └── tool_registry.py
 │
 ├── config/
 │   └── settings.py
