@@ -1,0 +1,7 @@
+{
+    "time": "2026-03-16 18:03:51,276",
+    "level": "INFO",
+    "filename": "tool_registry.py",
+    "lineno": 19,
+    "message": "Tool not in tools"
+}

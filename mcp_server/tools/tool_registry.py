@@ -1,6 +1,6 @@
 from typing import Callable, Dict, List
 
-from src.core.exception import CustomException
+# from src.core.exception import CustomException
 from src.core.logger import logger
 
 from .github_tools import search_repository

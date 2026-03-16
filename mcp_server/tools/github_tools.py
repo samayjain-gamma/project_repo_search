@@ -1,5 +1,7 @@
 import requests
 
+from src.core.logger import logger
+
 GITHUB_SEARCH_URL = "https://api.github.com/search/repositories"
 
 
@@ -10,7 +12,8 @@ def search_repository(query: str, top_k: int = 3):
     response = requests.get(GITHUB_SEARCH_URL, params=params)
 
     if response.status_code != 200:
-        raise Exception(f"GitHub API error: {response.status_code}")
+        logger.error("github api is wrong")
+        return
 
     data = response.json()
     repositories = []
