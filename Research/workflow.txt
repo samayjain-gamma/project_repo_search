@@ -1,0 +1,31 @@
+seperate 
+    client (request tools)  -> common for all
+    server (exposes tools)  -> particular for  a service
+    tool logic              -> logic for each perticular server(service)
+
+
+
+
+mcp-github-search/
+│
+├── app/
+│   │
+│   ├── main.py
+│   │
+│   ├── graph/
+│   │   ├── workflow.py
+│   │   ├── state.py
+│   │   └── nodes.py
+│   │
+│   └── mcp_client/
+│       └── client.py
+│
+├── mcp_servers/
+│   └── github_server/
+│       ├── server.py
+│       └── github_tool.py
+│
+├── config/
+│   └── settings.py
+│
+└── requirements.txt
