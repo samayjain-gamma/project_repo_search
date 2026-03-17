@@ -4,6 +4,7 @@ from typing import Callable, Dict, List
 from src.core.logger import logger
 
 from .github_tools import search_repository
+from .wikipedia_tools import search_wikipedia_articles
 
 
 class ToolRegistry:
@@ -27,10 +28,15 @@ class ToolRegistry:
 registry = ToolRegistry()
 
 registry.register_tool("search_repository", search_repository)
+registry.register_tool("search_wikipedia_articles", search_wikipedia_articles)
 
 if __name__ == "__main__":
     github_tool = registry.get_tool("search_repository")
     tools = registry.list_tools()
-    print(tools)
+    print(f"TOOLS : {tools} \n\n\n\n")
     repos = github_tool("RAG")
-    print(repos)
+    print(f"REPOS : \n\n {repos}")
+    wikipedia_tool = registry.get_tool("search_wikipedia_articles")
+    articles = wikipedia_tool(["RAG in ai", "LLM"])
+    for a in articles:
+        print(f"\n{a}\n")

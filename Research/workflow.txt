@@ -2,34 +2,3 @@ seperate
     client (request tools)  -> common for all
     server (exposes tools)  -> particular for  a service
     tool logic              -> logic for each perticular server(service)
-
-
-
-
-mcp-search-system/
-│
-├── app/
-│   │
-│   ├── main.py
-│   │
-│   ├── graph/
-│   │   ├── workflow.py
-│   │   ├── nodes.py
-│   │   └── state.py
-│   │
-│   └── mcp_client/
-│       └── client.py
-│
-├── mcp_server/
-│   │
-│   ├── server.py
-│   │
-│   ├── tools/
-│   │   ├── github_tool.py
-│   │   ├── wikipedia_tool.py
-│   │   └── tool_registry.py
-│
-├── config/
-│   └── settings.py
-│
-└── requirements.txt

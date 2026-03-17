@@ -10,14 +10,6 @@ def list_tools():
     return registry.list_tools()
 
 
-# @mcp.tool()
-# def call_tool(name: str, arguments: dict):
-
-#     tool = registry.get_tool(name)
-#     result = tool(**arguments)
-#     return result
-
-
 @mcp.tool()
 def call_tool(name: str, arguments: dict):
 
