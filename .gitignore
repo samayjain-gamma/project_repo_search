@@ -10,3 +10,7 @@ wheels/
 .venv
 
 .git/
+
+
+logs/
+.env

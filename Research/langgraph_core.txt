@@ -1,0 +1,16 @@
+langchain core   has 
+
+message : BaseMessage
+runnables
+langraph.prompts ->  ChatPromptTemplate
+.tools -> @tool
+parsers , raw_llm_response -> structures format, json
+callbacks , implimented in first task
+
+
+
+
+langchain
+langchain_core
+langchain_community
+
